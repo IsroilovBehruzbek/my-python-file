@@ -315,8 +315,237 @@
 # else:
 #     print("Xush kelibsiz!")
 
-son = int(input("Istalgan butun son kiriting: "))
+# son = int(input("Istalgan butun son kiriting: "))
 
-for n in range(2,11):
-    if not (son%n):
-        print(f"{son} soni {n} ga qoldiqsiz bo'linadi")
+# for n in range(2,11):
+#     if not (son%n):
+#         print(f"{son} soni {n} ga qoldiqsiz bo'linadi")
+
+
+# talaba = {'ism':'behruz', 'familiya':'isroilov', 'tugilgan yili':2006 }
+
+# print(f"Talaba {talaba['ism'].title()} {talaba['familiya']} u {talaba['tugilgan yili']} da tugilgan")
+
+
+# otam = {'ismi':'ravshanbek', 't_yil':1979, 'shahri':'fargona', 'kochasi':'mashal'}
+# onam = {'ismi':'hurixon', 't_yil':1981, 'shahri':'fargona', 'kochasi':'mashal'}
+
+
+
+# print(f"otamni ismi {otam['ismi'].title()} {otam['t_yil']} -yilda tugilgan {otam['shahri'].title()} shahrida tugilgan {otam['kochasi'].title()} kochasida turadi")
+# print(f"onami ismi {onam['ismi'].title()} {onam['t_yil']} - yilda tugilgan {onam['shahri'].title()} shahrida tugilgan {onam['kochasi'].title()} kochasida turadi")
+
+# oila = {
+#         'ism1':'ali',
+#         'y_taom1':'osh',
+#         'ism2':'vali',
+#         'y_taom2':'shorva',
+#         'ism3':'gani',
+#         'y_taom3':'manti',
+#         'ism4':'anvar',
+#         'y_taom4':'mastava',
+#         'ism5':'abdu',
+#         'y_taom5':'mastava'
+#         }
+# print(f"{oila['ism1'].title()} ning yaxshi korgan ovqati {oila['y_taom1']}")
+# print(f"{oila['ism2'].title()} ning yaxshi korgan ovqati {oila['y_taom2']}")
+# print(f"{oila['ism3'].title()} ning yaxshi korgan ovqati {oila['y_taom3']}")
+# print(f"{oila['ism4'].title()} ning yaxshi korgan ovqati {oila['y_taom4']}")
+# print(f"{oila['ism5'].title()} ning yaxshi korgan ovqati {oila['y_taom5']}")
+
+# lugat = {
+#     'apple':'olma',
+#     'pineapple':'nok',
+#     'banana':'banan',
+#     }
+# kirit = input("Kalit sozni kirit:  ")
+# chiq = lugat.get(kirit,'Bunday ism mavjud emas')
+
+# print(chiq)
+
+# python_izohli_lugati = {
+#     'integer':"Butun son",
+#     'float':"O'nlik son",
+#     'string':"Matn",
+#     'list':"Ro'yxat",
+#     'tuple':"O'zgarmas ro'yxat"}
+# # print(python_izohli_lugati['tuple'])
+
+# kalit = input("Kalit so'z kiriting:").lower()
+# print(python_izohli_lugati.get(kalit,"Bunday so'z mavjud emas"))
+
+# kalit = input("Kalit so'z kiriting:").lower()
+# tarjima = python_izohli_lugati.get(kalit)
+# if tarjima==None:
+#     print("Bunday so'z mavjud emas")
+# else:
+#     print(f"{kalit.title()} so'zi {tarjima} deb tarjima qilinadi")
+    
+
+# izoh_lugat = {
+#     'boolean':'mantiqiy qiymat',
+#     'float':'onlik son',
+#     'for':'biror amalni qayta qayta takrorlash tsikli',
+#     'if':'shartlarn tekshirish operatori',
+#     'interger':'butun son'
+#     }
+
+
+# for izoh in sorted(izoh_lugat):
+#     print(izoh)
+    
+# for izohh in sorted(izoh_lugat.values()):
+    
+#     print(izohh)
+
+
+
+# from tkinter import *
+
+
+# # Tk() bu yerda konstrukter deyladi
+# window = Tk() 
+
+# # title() bu yerda sarlavha oynasi deyiladi
+# window.title("sarlavha oynasi dasturini")
+
+# # geometry(500x500) esa bunda oyanani olchamlarini belgilaydi
+# window.geometry("500x500")
+
+# cliks = 0
+
+# def click():
+#     global cliks
+#     cliks += 1
+#     buttonText.set("Cliks {}".format(cliks))
+# buttonText = StringVar()
+
+# # button() bu yerda oynaga knopka qosish uchun ishlatiladi
+# btn = Button(textvariable=buttonText, text="salom", background="red", foreground='yellow', padx='50', pady='10', font=('arial', 20), activebackground='green', bd=10, command=click)
+# # pack() bu yerda knopkani korsatish uchun ishjlatiladi
+# btn.pack(expand=True,  side=BOTTOM)
+
+# # button() bu yerda oynaga knopka qosish uchun ishlatiladi
+# btn2 = Button(textvariable=buttonText, text="salom", background="red", foreground='yellow', padx='50', pady='10', font=('arial', 20), activebackground='green', bd=10, command=click)
+# # pack() bu yerda knopkani korsatish uchun ishjlatiladi
+# btn2.pack(expand=True,  side=TOP)
+
+
+# # button() bu yerda oynaga knopka qosish uchun ishlatiladi
+# btn3 = Button(textvariable=buttonText, text="salom", background="red", foreground='yellow', padx='50', pady='10', font=('arial', 20), activebackground='green', bd=10, command=click)
+# # pack() bu yerda knopkani korsatish uchun ishjlatiladi
+# btn3.pack(expand=True, side=LEFT)
+
+
+# # button() bu yerda oynaga knopka qosish uchun ishlatiladi
+# btn4 = Button(textvariable=buttonText, text="salom", background="red", foreground='yellow', padx='50', pady='10', font=('arial', 20), activebackground='green', bd=10, command=click)
+# # pack() bu yerda knopkani korsatish uchun ishjlatiladi
+# btn4.pack(expand=True,  side=RIGHT)
+
+
+
+
+
+# # mainloop() bu yerda oynanni chiqarish uchun ishlatiladi
+# window.mainloop() 
+
+
+# adabiyot = {
+#     'abu abdulloh muhammad ibn ismoil ':['Al-jome','as-sahih', 'al-adab'],
+#     }
+
+# for ism, tillar in adabiyot.items():
+#     print(f"\n{ism.title()} mashxur asarlari: ")
+#     for til in tillar:
+#         print(til.upper())
+
+
+
+
+# son = 1
+# while son<=5:
+#      print(son, end=' ')
+#      son += 1
+# print('son tugadi')
+
+
+
+
+
+# print('Kiritilgan soni kvatradini hioblovchi dastur')
+# savol = 'Istalgan soni kiriting '
+# savol += "(dasturni toxtatish uchun 'exit' deb yozing) : "
+# qiymat = ''
+# while qiymat != 'exit':
+#     qiymat = input(savol)
+#     if qiymat != 'exit':
+#         print(float(qiymat)**2)
+        
+
+# 2chi 
+
+
+
+
+# print('Kiritilgan soni kvatradini hioblovchi dastur')
+# savol = 'Istalgan soni kiriting '
+# savol += "(dasturni toxtatish uchun 'exit' deb yozing) : "
+# ishora = True
+# while ishora:
+#     qiymat = input(savol)
+#     if qiymat == 'exit':
+#         ishora = False
+#     else:
+#         print(float(qiymat)**2)
+# print("dastur toxtadi")
+        
+
+# amaliyot while
+
+# kirit = 'yaxshi korgan kitobingizni kiriting'
+# kirit += 'dasturni toxtatish uchun "stop" sozin yozing: '
+# qiymat  = ''
+# while qiymat != 'stop':
+#     qiymat = input(kirit)
+# print('dastur toxtadi')
+
+
+# # 2
+
+# savol = "Yoshingizni kiriting: "
+
+# while True:
+#     qiymat = input(savol)
+#     if qiymat == 'exit' or qiymat == 'quit':
+#         break
+#     yosh = int(qiymat)
+    
+#     if yosh<7:
+#         narh = 2000
+#     elif 7<=yosh<18:
+#         narh = 3000
+#     elif 18<=yosh<65:
+#         narh = 10000
+#     else: narh = 0
+    
+#     if narh==0:
+#         print("Sizga chipta bepul")
+#     else:
+#         print(f"Chipta {narh} so'm")
+# print("datur toxtadi")
+
+
+savol ="Kiritilgan sonning ildizini qaytaruvchi dastur.\n"
+savol += "Musbat son kiriting "
+savol += "(dasturni to'xtatish uchun 'exit' deb yozing): "
+
+while True:
+    qiymat = input(savol)
+    if qiymat=='exit':
+        break
+    elif float(qiymat)<0:
+        continue # agar foydalanuvchi manfiy son kiritsa tsiklni takrorlaymiz
+    else:
+        ildiz = float(qiymat)**(0.5)
+        print(f"{qiymat} ning ildizi {ildiz} ga teng")
+    
